@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Alexandria Network Features</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" media="screen" />
+    <script defer src="Features.js"></script>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.28/"></script>
+    <link rel="stylesheet" href="./Features_Style.css">
+
+</head>
+
+
+
+<body>
+    <header>
+        <nav>
+            <h1>Alexandria App</h1>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <label for="selectbox" style="color: #ffffff;">Base Map Gallery</label> <br> 
+            <select class="basemapselector" id="basemapSelector" name="selectbox">
+                <option value="dark-gray" selected>Dark Gray Canvas</option>
+                <option value="arcgis-navigation" >ArcGIS Navigation</option>
+                <option value="osm">Open Street Map</option>
+                <option value="streets-night-vector">World Street Map</option>
+            </select> <br>
+            <label for="selectbox" style="color: #ffffff;">Network Features</label>
+            <div class="button">
+                <button type="submit" id="rnd4" style="background-image: url(./IMG/attractions.png);" class="buttonBackground"></button>  
+                <button type="submit" id="rnd0" style="background-image: url(./IMG/pedestrian.png);" class="buttonBackground"></button>  
+                <button type="submit" id="rnd3" style="background-image: url(./IMG/bicycle.png);" class="buttonBackground"></button>
+                <button type="submit" id="rnd1" style="background-image: url(./IMG/E_Bus.png);" class="buttonBackground"></button>
+                <button type="submit" id="rnd2" style="background-image: url(./IMG/tram.png);" class="buttonBackground"></button>
+            </div>         
+        </aside>
+        <section>
+            
+            <div id="map"></div>
+        </section>
+    </main>
+</body>
+
+</html>
